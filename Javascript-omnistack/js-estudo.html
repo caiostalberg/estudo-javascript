@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <title>
+        Curso Javascript
+    </title>
+</head>
+
+<body>
+    <script>
+        console.log('Helo World')
+            // variaveis
+        var nome = "Caio";
+        var idade = 28;
+        var peso = 57.5;
+        var humano = true;
+        var alunos = ['Joao', 'Mateus', 'Leticia'];
+        var aluno = {
+            nome: 'Joao',
+            idade: 30,
+            peso: 70.3,
+            humano: true
+        }
+        console.log(alunos[1]);
+        console.log(aluno.nome);
+        console.log('//////////////////////////////////////////')
+    </script>
+    <script>
+        var x = 10,
+            y = 5;
+        var resultado = x + y; // operadores + - * / % 
+        resultado += 3; // incremento // -= += *=
+        console.log(resultado);
+        console.log('//////////////////////////////////////////')
+    </script>
+    <script>
+        // function....
+        console.log('function...');
+
+        function soma(numero1, numero2) {
+            var resultado1 = numero1 + numero2;
+            return resultado1;
+        }
+        var resultado1 = soma(1, 2);
+        console.log(resultado1);
+        console.log('//////////////////////////////////////////')
+    </script>
+    <script>
+        // condicionais....
+        console.log('Condicional...');
+
+        function retornaSexo(sexo) {
+            // M , F
+            // Masculino, Feminino
+            if (sexo === 'M') { // === verifica tipo de variavel se é igual
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return 'Feminino';
+            } else {
+                return '...';
+            }
+        }
+        var resultado2 = retornaSexo('M');
+        console.log(resultado2);
+        console.log('//////////////////////////////////////////')
+    </script>
+
+    <script>
+        // Operadores lógicos....
+        // AND, OR, NOT
+        // if(time = 'Palmeiras'){
+        //     return 'Palmeiras';
+        // }else{
+        //     return 'Outro Time';
+        // }
+        var time = 'Palmeiras';
+        var time = (time === 'Palmeiras') ? 'Palmeiras' : 'Outro time'; // condicao ternaria
+        console.log(time);
+        console.log('//////////////////////////////////////////')
+    </script>
+    <script>
+        // Estruturas de repeticao
+        console.log('Estruturas de repeticao');
+        for (let i = 0; i < 100; i++) {
+            console.log(i);
+        }
+        var j = 0;
+        while (j <= 100) {
+            console.log(j)
+            j++
+        }
+
+        console.log('//////////////////////////////////////////')
+    </script>
+    <script>
+        // Intervalo e timeout
+        function exibeAlgo() {
+            console.log('Helo World')
+        }
+        setInterval(exibeAlgo(), 1000); // executa sempre em 1 segundo
+        setTimeout(exibeAlgo(), 5000); // executa apenas 1 vez dps de 5 segundos
+
+        console.log('//////////////////////////////////////////')
+    </script>
+
+    <!-- CAPITULO 2 ******************************************************************************** -->
+    <!-- Manipulando DOM -->
+    <div id="app">
+        <button onmouseover="mostraAlerta()">Teste</button>
+        <!--Passa o mouse por cima-->
+        <button onkeypress="mostraAlerta()">Teste</button>
+        <!--Clica no botao-->
+    </div>
+
+
+    <script>
+        // Manipulando DOM
+        function mostraAlerta() {
+            alert('Botão foi clicado');
+        }
+
+        console.log('//////////////////////////////////////////')
+    </script>
+</body>
+
+</html>
