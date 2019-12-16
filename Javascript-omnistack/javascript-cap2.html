@@ -1,0 +1,116 @@
+<html>
+
+    <head>
+        <title>
+            Curso Javascript
+        </title>
+    </head>
+
+    <body>
+
+        <!-- CAPITULO 2 ******************************************************************************** -->
+
+
+        <!-- Manipulando DOM -->
+        <div id="app">
+            <button onmouseover="mostraAlerta()">mouse passou por cima</button>
+            <!--Passa o mouse por cima-->
+            <input type="text" onkeypress="mostraAlerta()" name='mouseover' />
+            <!--tecla precionada-->
+
+            <input type="text" name="name" />
+            <input type="text" name="name" />
+            <button class="botao"> adicionar</button>
+        </div>
+
+        <script>
+            // Manipulando DOM
+            var inputElementSelector = document.querySelector('body div#app input');
+            var inputElementSelectorBotao = document.querySelector('button.botao');
+            var inputElementTagName = document.getElementsByTagName('input');
+
+            console.log(inputElementSelector);
+            console.log(inputElementSelectorBotao);
+            console.log(inputElementTagName);
+
+            function mostraAlerta() {
+                alert('Botão foi clicado');
+            }
+            console.log('//////////////////////////////////////////');
+
+        </script>
+        <script>
+            // Iniviando aplicação
+            var linkElement = document.createElement('a');
+            var inputElement = document.createElement('input');
+            var imgElement = document.createElement('img');
+            var buttonElement = document.createElement('button');
+            var tableElement = document.createElement('table');
+
+            linkElement.setAttribute('href', 'http://teste.com.br');
+            inputElement.setAttribute('id', 'nome_id');
+            imgElement.setAttribute('src', '/img/nome_da_pasta/nome_arquivo.jpg');
+
+            var textElement = document.createTextNode('Acessar link');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            var inputElement = document.querySelector('#nome'); // removendo um elemento com o id nome.
+            containerElement.removeChild(inputElement);
+
+            console.log('//////////////////////////////////////////');
+
+        </script>
+
+        <script>
+            // Renderizando Todos
+            var linkElement = document.createElement('a');
+            var inputElement = document.createElement('input');
+            var imgElement = document.createElement('img');
+            var buttonElement = document.createElement('button');
+            var tableElement = document.createElement('table');
+
+            linkElement.setAttribute('href', 'http://teste.com.br');
+            inputElement.setAttribute('id', 'nome_id');
+            imgElement.setAttribute('src', '/img/nome_da_pasta/nome_arquivo.jpg');
+
+            var textElement = document.createTextNode('Acessar link');
+            linkElement.appendChild(textElement);
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(linkElement);
+
+            var inputElement = document.querySelector('#nome'); // removendo um elemento com o id nome.
+            containerElement.removeChild(inputElement);
+
+            console.log('//////////////////////////////////////////');
+
+        </script>
+
+        <script>
+            // Criando Todos
+
+
+            console.log('//////////////////////////////////////////');
+
+        </script>
+        <script>
+            // Excluindo Todos
+
+
+            console.log('//////////////////////////////////////////');
+
+        </script>
+
+        <script>
+            // Salvando no storage
+
+
+            console.log('//////////////////////////////////////////');
+
+        </script>
+    </body>
+
+</html>
